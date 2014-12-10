@@ -1,0 +1,6 @@
+name              "composer"
+maintainer        "Tony Porter"
+maintainer_email  "tonymporter@gmail.com"
+license           "MIT"
+description       "Installs/Updates Composer"
+version           "1.0.0"
