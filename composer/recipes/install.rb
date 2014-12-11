@@ -6,6 +6,7 @@ node[:deploy].each do |application, deploy|
     user "root"
     cwd "#{deploy[:deploy_to]}/current"
     code <<-EOH
+    export SYMFONY_ENV=prod && 
     curl -s https://getcomposer.org/installer | php
     php composer.phar install --no-dev --no-interaction --optimize-autoloader
     EOH
